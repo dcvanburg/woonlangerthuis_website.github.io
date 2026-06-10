@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over mij — Woon Langer Thuis</title>
+  <meta name="description" content="Onafhankelijk advies over langer thuis wonen. Leer mij kennen — mijn achtergrond in zorgtechnologie en woningaanpassingen.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Woon Langer Thuis</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="over-mij.html" class="active">Over mij</a></li>
+      <li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="over-mij.html">Over mij</a>
+    <a href="nieuwsbrief.html">Nieuwsbrief</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <h1>Over mij</h1>
+      <p>Wie ik ben en waarom ik dit doe</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="about-hero">
+
+        <div>
+          <div class="about-photo" role="img" aria-label="Persoonlijke foto — volgt binnenkort" style="max-width:280px;">
+            📷 Foto volgt<br>binnenkort
+          </div>
+        </div>
+
+        <div>
+          <h2>Hallo, ik ben [naam]</h2>
+
+          <p>Hier komt jouw persoonlijke verhaal. Wat heeft jou ertoe gebracht om dit platform te starten? Misschien heb je zelf ervaring met het ondersteunen van een oudere ouder, of werk je in de zorg. Dat persoonlijke verhaal maakt jou geloofwaardig en benaderbaar.</p>
+
+          <p>Vertel hier iets over je achtergrond: je opleiding, je werkervaring in de zorgsector of technologie, en wat jou drijft. Mensen die dit lezen zijn op zoek naar iemand die ze vertrouwen — wees dus eerlijk en persoonlijk.</p>
+
+          <div class="trust-block">
+            Ik verdien niets aan de producten die ik aanraad. Mijn advies is altijd onafhankelijk.
+          </div>
+
+          <h3>Mijn achtergrond in zorgtechnologie</h3>
+
+          <p>Hier kun je je specifieke kennis beschrijven. Heb je gewerkt als ergotherapeut, in de thuiszorg, of ben je zelf mantelzorger geweest? Die concrete ervaring maakt jou anders dan een website die producten verkoopt.</p>
+
+          <p>Vertel ook wat je hebt geleerd: welke aanpassingen echt helpen, welke producten goed zijn en welke teleurstellen, en waar mensen op moeten letten als ze advies zoeken.</p>
+
+          <h3>Wat vind je op deze website?</h3>
+
+          <p>Op Woon Langer Thuis schrijf ik over:</p>
+          <ul style="margin: 1rem 0 1rem 1.5rem;">
+            <li style="margin-bottom:0.5rem;"><strong>Woningaanpassingen</strong> — van drempelverwijdering tot aangepaste badkamers</li>
+            <li style="margin-bottom:0.5rem;"><strong>Zorgtechnologie</strong> — welke gadgets echt helpen, eerlijk beoordeeld</li>
+            <li style="margin-bottom:0.5rem;"><strong>Subsidies & financiën</strong> — hoe je vergoed kunt krijgen wat je nodig hebt</li>
+            <li style="margin-bottom:0.5rem;"><strong>Mantelzorg</strong> — tips voor wie voor een naaste zorgt</li>
+            <li style="margin-bottom:0.5rem;"><strong>Productadvies</strong> — eerlijke reviews zonder commercieel belang</li>
+          </ul>
+
+          <a href="nieuwsbrief.html" class="btn btn-primary" style="margin-top:1rem;">Schrijf je in voor de nieuwsbrief</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="over-mij.html">Over mij</a></li>
+      <li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <span>© 2024 Woon Langer Thuis — Onafhankelijk advies over langer zelfstandig wonen</span>
+      <div class="footer-legal">
+        <a href="#">Privacyverklaring</a>
+        <a href="#">Algemene voorwaarden</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.querySelector('.site-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+hamburger?.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+</script>
+</body>
+</html>
