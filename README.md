@@ -57,11 +57,22 @@ De nieuwsbriefsectie (`nieuwsbrief.html`) bevat een HTML-formulier als placehold
 
 ---
 
-## Hosting
+## Hosting (GitHub Pages)
 
-Upload alle bestanden via FTP naar je webhosting. Zorg dat `index.html` in de root staat. Geen server-side configuratie nodig — het zijn gewoon statische bestanden.
+Deze site wordt gehost via **GitHub Pages**. Na elke push naar `main` wordt de site automatisch bijgewerkt.
 
-**Aanbevolen hosting voor statische sites:** Netlify (gratis), Cloudflare Pages (gratis), of gewone gedeelde hosting via bijv. TransIP of Antagonist.
+**Live URL (project site):** https://dcvanburg.github.io/woonlangerthuis_website.github.io/
+
+### Eigen domein (bijv. woonlangerthuis.nl)
+
+1. Ga in GitHub naar **Settings → Pages → Custom domain**
+2. Vul `woonlangerthuis.nl` in (en eventueel `www.woonlangerthuis.nl`)
+3. Stel bij je domeinregistrar DNS in:
+   - **A-records** voor `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - **CNAME** voor `www` → `dcvanburg.github.io`
+4. Wacht tot DNS is doorgevoerd (kan tot 24 uur duren)
+
+Geen server-side configuratie nodig — het zijn gewoon statische bestanden.
 
 ---
 
